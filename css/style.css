@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "SF Pro Display";
+    src: url(/fonts/SFProDisplay-Regular.ttf);
+}
+body {
+    background-color: #f5f5f5;
+}
+.block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+button img {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.input {
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    width: 100%;
+    padding-left: 32px;
+}
+.input::placeholder {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #BFBFBF;
+}
+.header {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.header-input {
+    max-width: 690px;
+    height: 40px;
+    background: url(/img/home.svg) no-repeat 10px center;
+    border: 1px solid #D9D9D9;
+}
+.header-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.button {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    border:none;
+    cursor: pointer;
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+.button--primary {
+    background: #1890FF;
+    color: #FFFFFF;
+    margin-right: 8px;
+}
+.button--secondary {
+    background: transparent;
+    border: 1px solid #D9D9D9;
+}
+.section-promo {
+    margin-bottom: 56px;
+}
+.promo-block {
+    background: #FFF1B8 url(/img/promo.png) no-repeat right;
+    border-radius: 10px;
+    padding: 68px 71px;
+    filter: drop-shadow(0px 7px 12px rgba(158, 158, 163, 0.1));
+}
+.text-block {
+    max-width: 538px;
+    width: 100%;
+}
+.promo-title {
+    max-width: 438px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 46px;
+    color: #302C34;
+    margin-bottom: 15px;
+}
+.promo-desc {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #302C34;
+}
+.section-rest {
+    padding-bottom: 91px;
+}
+.section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 44px;
+}
+.section__header-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+}
+.search-input {
+    max-width: 306px;
+    height: 34px;
+    background: url(/img/search.svg) no-repeat 10px center;
+}
+.cards {
+    flex-wrap: wrap;
+}
+.card {
+    max-width: 384px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 7px;
+    text-decoration: none;
+    color: black;
+}
+.card-main {
+    padding: 21px 24px 35px;
+    position: relative;
+}
+.card-main__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.card-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-decoration: none;
+    color: black;
+}
+.time-write {
+    background: #262626;
+    border-radius: 2px;
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+    padding: 5px 8px;
+}
+.rating {
+    position: relative;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFC107;
+    margin-left: 22px;
+    margin-right: 26px;
+}
+.rating::before {
+    content: '';
+    width: 15px;
+    height: 14px;
+    background: url(/img/star.svg);
+    position: absolute;
+    top: 1px;
+    left: -22px;
+}
+.midprice {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #8C8C8C;
+    margin-right: 25px;
+}
+.dish {
+    position: relative;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #8C8C8C;
+}
+.dish::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: url(/img/ellipse.svg);
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    margin-top: -3px;
+}
+.footer {
+    background-color: #fff;
+    padding: 60px 0;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(/fonts/Roboto-Regular.ttf);
+}
+.footer-block {
+    max-width: 556px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation {
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link {
+    text-decoration: none;
+    font-family:"Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #595959;
+}
+.social-block {
+    max-width: 127px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.restourant__header {
+    max-width: 442px;
+    width: 100%;
+}
+.product-header {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.desc {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #8C8C8C;
+    margin-top: 10px;
+}
+.product-desc {
+    max-width: 210px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+.product-price {
+    font-family: "Roboto";
+    font-size: 20px;
+    line-height: 32px;
+    color: #000000;
+}
