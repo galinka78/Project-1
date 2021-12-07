@@ -339,12 +339,12 @@ button img {
     width: 100%;
 }
 .product-name {
-    font-style: 18px;
+    font-size: 18px;
     line-height: 32px;
 } 
 .price-product {
     font-weight: bold;
-    font-style: 20px;
+    font-size: 20px;
     line-height: 32px;
 }
 .btn-count {
